@@ -9,6 +9,51 @@ input {
     padding: 5px;
 }
 
+h1, h2, label {
+  text-align: center;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "side1-container center-container side2-container"
+}
+
+.side1-container {
+  grid-area: side1-container;
+}
+
+.side2-container {
+  grid-area: side2-container;
+}
+
+#center-container {
+  grid-area: center-container;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title-container {
+  width: 360px;
+}
+
+#grade-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  #grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "center-container";
+  }
+}
+
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;

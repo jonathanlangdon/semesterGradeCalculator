@@ -8,18 +8,23 @@
     <title>Semester Grade Calculator</title>
   </head>
   <body>
-    <div><h1>Semester Grade Calculator</h1></div>
-    <div>
-      <label for="quarter-1-input">Quarter 1 Grade:</label>
-      <input type="number" id="quarter-1-input" placeholder="Quarter Grade" autofocus><br>
-      <label for="quarter-2-input">Quarter 2 Grade:</label>
-      <input type="number" id="quarter-2-input" placeholder="Quarter Grade"><br>
-      <label for="exam-input">Exam Grade:</label>
-      <input type="number" id="exam-input" placeholder="Exam Grade"><br>
+    <div id="grid-container">
+      <div class="side1-container"></div>
+      <div id="center-container">
+        <div id="title-container"><h1>Semester Grade Calculator</h1></div>
+        <div id="grade-input-container">
+          <label for="quarter-1-input">Quarter 1 Grade:</label><br>
+          <input type="number" id="quarter-1-input" placeholder="Quarter Grade" autofocus><br>
+          <label for="quarter-2-input">Quarter 2 Grade:</label><br>
+          <input type="number" id="quarter-2-input" placeholder="Quarter Grade"><br>
+          <label for="exam-input">Exam Grade:</label><br>
+          <input type="number" id="exam-input" placeholder="Exam Grade"><br>
+        </div>
+        <div id="semester-grade"><h2> </h2></div>
+        <div><button id="reset">RESET</button></div>
+      </div>
+      <div class="side2-container"></div>
     </div>
-    
-    <div id="semester-grade"><h2> </h2></div>
-    <div><button id="reset">RESET</button></div>
     <script src="script.js"></script>
   </body>
 </html>
