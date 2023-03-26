@@ -43,7 +43,7 @@ h1, h2, label {
 #grade-input-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 
@@ -62,4 +62,5 @@ input[type=number]::-webkit-inner-spin-button {
  
 input[type=number] {
   -moz-appearance: textfield;
+  width: 60px;
 }
