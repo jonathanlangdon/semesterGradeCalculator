@@ -24,7 +24,7 @@ resetButton.addEventListener("click", () => {
   quarter1Input.value = "";
   quarter2Input.value = "";
   examInput.value = "";
-  semesterGradeOutput.textContent = " ";
+  semesterGradeOutput.textContent = "Please enter your grades";
 });
 
 quarter1Input.addEventListener("input", calculateSemesterGrade);
