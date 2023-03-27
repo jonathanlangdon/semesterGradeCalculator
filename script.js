@@ -16,6 +16,10 @@ function calculateSemesterGrade() {
     return;
   }
   const currentGrades = (quarter1Grade ? .45 : 0) + (quarter2Grade ? .45 : 0) + (examGrade ? .10 : 0);
+  if (isNaN(currentGrades) || currentGrades === 0) {
+    semesterGradeOutput.textContent = "Please enter valid grades between 0 and 101";
+    return;
+  }
   const semesterGrade = ((quarter1Grade * 0.45) + (quarter2Grade * 0.45) + (examGrade * 0.1))/currentGrades;
   semesterGradeOutput.textContent = `Your semester grade is ${Math.round(semesterGrade)}`;
 }
