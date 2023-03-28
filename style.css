@@ -69,8 +69,8 @@ button {
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
-  background-color: darkgoldenrod;
-  color: white;
+  background: darkgoldenrod;
+  color: #FFFFFF;
   font-weight: bold;
   font-size: large;
 }
