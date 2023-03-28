@@ -3,6 +3,10 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
+body {
+  background-image: url(beach.jpg);
+}
+
 input {
     border-radius: 5px;
     font-size: 16px;
@@ -15,6 +19,7 @@ h1, h2, label {
 
 h1 {
   font-size: x-large;
+  color: rgba(255, 255, 255, 90%)
 }
 
 h2 {
