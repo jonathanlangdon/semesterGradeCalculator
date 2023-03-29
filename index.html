@@ -12,18 +12,12 @@
       <div class="side1-container"></div>
       <div id="center-container">
         <div id="title-container"><h1>Semester Grade Calculator</h1></div>
-        <table id="grade-input-container">
-          <tr><td><label for="quarter-1-input">Quarter 1 Grade:</td>
-            <td><input type="number" id="quarter-1-input" autofocus></label></td>
-          </tr>
-          <tr><td><label for="quarter-2-input">Quarter 2 Grade:</td>
-            <td><input type="number" id="quarter-2-input"></label></td>
-          </tr>
-          <tr><td><label for="exam-input">Exam Grade:</td>
-            <td><input type="number" id="exam-input"></label></td>
-          </tr>
-          <tr><td colspan="2"><h2 id="semester-grade">Please enter your grades</h2></td></tr>
-        </table>
+        <div id="grade-input-container">
+          <label for="quarter-1-input">Quarter 1 Grade: <input type="number" id="quarter-1-input" autofocus></label>
+          <label for="quarter-2-input">Quarter 2 Grade: <input type="number" id="quarter-2-input"></label>
+          <label for="exam-input">Exam Grade: <input type="number" id="exam-input"></label>
+          <h2 id="semester-grade">Please enter your grades</h2>
+        </div>
         <div><button id="reset">RESET</button></div>
       </div>
       <div class="side2-container"></div>

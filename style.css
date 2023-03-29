@@ -11,6 +11,7 @@ input {
     border-radius: 5px;
     font-size: 16px;
     padding: 5px;
+    margin: 0 20px 0 0;
 }
 
 h1, h2, label {
@@ -54,13 +55,21 @@ h2 {
 }
 
 #grade-input-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
   background-color: bisque;
   width: 360px;
+  padding: 10px;
 }
 
-table {
-  width: 360px;
-  text-align: center;
+label {
+  padding: 0 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
