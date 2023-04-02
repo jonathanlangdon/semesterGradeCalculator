@@ -31,7 +31,8 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
-    "side1-container center-container side2-container"
+    "side1-container center-container side2-container";
+  margin: auto auto;
 }
 
 .side1-container {
@@ -62,10 +63,16 @@ h2 {
   align-content: center;
   width: 360px;
   padding: 10px;
+  border-radius: 10px;
 }
 
 #grade-input-container, button {
-  background: #db7651;
+  background: #3c8be6;
+}
+
+#semester-grade {
+  color: #fff;
+  font-size: larger;
 }
 
 label {
