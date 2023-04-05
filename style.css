@@ -44,8 +44,7 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
+  place-content: center;
   width: 330px;
   padding: 10px;
   border-radius: 10px;
