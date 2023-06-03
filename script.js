@@ -1,9 +1,11 @@
+// variables
 const quarter1Input = document.getElementById("quarter-1-input");
 const quarter2Input = document.getElementById("quarter-2-input");
 const examInput = document.getElementById("exam-input");
 const semesterGradeOutput = document.getElementById("semester-grade");
 const resetButton = document.getElementById("reset");
 
+//main calculation
 function calculateSemesterGrade() {
   const quarter1Grade = Number(quarter1Input.value);
   const quarter2Grade = Number(quarter2Input.value);
